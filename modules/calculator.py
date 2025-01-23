@@ -1,6 +1,6 @@
 import adder as a
 import subtractor as s
-
+import product as p
 
 print(5*" "+"Calculator")
 print(20*"=")
@@ -15,6 +15,9 @@ while domore!='n':
     elif choice==2:
         result=s.subtract(num1,num2)
         print("Difference = ",result)
+    elif choice==3:
+        result=p.multiply(num1,num2)
+        print("Product = ",result)
     else:
         print("Wrong choice!")
     domore=input("Do you wish to continue ? (y/n)")
